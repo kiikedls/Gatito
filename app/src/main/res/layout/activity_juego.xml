@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".juego">
+    tools:context=".juego"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A jugar!"
         android:layout_gravity="center|top"
-        android:textSize="32dp"/>
+        android:textSize="32dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,17 +36,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn1"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn2"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -49,17 +61,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn4"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn5"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn6"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -70,19 +85,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn7"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn8"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/btn9"/>
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:textSize="55dp"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        tools:visibility="visible" />
 
 </FrameLayout>
